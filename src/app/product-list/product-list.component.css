@@ -1,0 +1,30 @@
+
+
+
+.product-table-container {
+    margin: 20px auto;
+    max-width: 800px;
+    text-align: left;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+  }
+  
+  thead th {
+    background-color: #f4f4f4;
+    border-bottom: 2px solid #ddd;
+    padding: 10px;
+  }
+  
+  tbody td {
+    border-bottom: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  tbody tr:hover {
+    background-color: #f9f9f9;
+  }
+  

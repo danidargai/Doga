@@ -1,0 +1,47 @@
+
+
+
+<div>
+    <h1>Termékek</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Név</th>
+          <th>Kategória</th>
+          <th>Leírás</th>
+          <th>Ár</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td></td>
+          <td><input type="text" ></td>
+          <td><input type="text"></td>
+          <td><input type="text"></td>
+          <td><input type="number"></td>
+          <td>
+            
+            <button (click)="addProduct(newProduct.id)">Hozzáadás</button>
+            <button (click)="saveProduct(newProduct.id)">Mentés</button>
+            <button (click)="cancelProduct(newProduct.id)">Mégse</button>
+          </td>
+          
+        <tr *ngFor="let product of products">
+          <td>{{ product.id }}</td>
+          <td>{{ product.name }}</td>
+          <td>{{ product.category }}</td>
+          <td>{{ product.description }}</td>
+          <td>{{ product.price | currency: 'HUF' }}</td>
+          <td>
+            <button (click)="updateProduct(product.id)">Frissítés</button>
+            <button (click)="editProduct(product.id)">Szerkeszt</button>
+            <button (click)="deleteProduct(product.id)">Törlés</button>
+          
+
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  
